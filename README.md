@@ -1,5 +1,5 @@
 ## Deeply supervised neural network with short connections for retinal vessel segmentation
-Please read our paper (https://arxiv.org/abs/1803.03963) for more details!
+Please read our [paper] (https://arxiv.org/abs/1803.03963) for more details!
 
 ### Introduction:
 In this paper, we present a multi-scale and multi-level deeply supervised convolutional neural network with short connections (SDSN) for vessel segmentation. We use short connections to transfer semantic information between side-output layers. Forward short connections could pass low level semantic information to high level and backward short connections could pass much structural information to low level. In addition, we propose using a structural similarity measurement to evaluate the vessel map. The proposed method was verified on DRIVE dataset and it showed superior performance compared with other state-of-the-art methods. Specially, with patch level input, the network gets 0.7890 sensitivity, 0.9803 specificity and 0.9802 AUC.
