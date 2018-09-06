@@ -16,8 +16,8 @@ database = 'DRIVE'
 use_gpu = 1;
 gpu_id = 0;
 
-net_struct  = 'deploy_dsn.prototxt'
-data_source = './data/test_DRIVE.txt'
+net_struct  = 'deploy_sdsn_drive.prototxt'
+data_source = './data/test_drive.lst'
 
 # Input your path here
 data_root = ''
@@ -37,7 +37,7 @@ if use_gpu:
 
 
 # load net
-net = caffe.Net('./'+net_struct,'./pretrained_sdsn.caffemodel', caffe.TEST);
+net = caffe.Net('./'+net_struct,'./pretrained_sdsn_drive.caffemodel', caffe.TEST);
 	
 for idx in range(0,len(test_lst)):
     print("Scoring sdsn for image " + data_root + imnames[idx][:-1])

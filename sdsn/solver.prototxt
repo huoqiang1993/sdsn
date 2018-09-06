@@ -1,4 +1,4 @@
-net: "train.prototxt"
+net: "sdsn_train_drive.prototxt"
 test_iter: 20
 test_interval: 5000
 display: 5000
@@ -12,7 +12,7 @@ momentum: 0.9
 weight_decay: 0.0005
 # snapshot caffemodel solverstate
 snapshot: 2000
-snapshot_prefix: "./snapshot/dsn"
+snapshot_prefix: "./snapshot/"
 # uncomment the following to default to CPU mode solving
 solver_mode: GPU 
 max_iter: 60000
